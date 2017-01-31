@@ -1,25 +1,3 @@
-// $(function() {
-//     // Initialize form validation on the registration form.
-//     // It has the name attribute "registration"
-//     $("#pizza").validate({
-//         // Specify validation rules
-//         rules: {
-//             // The key name on the left side is the name attribute
-//             // of an input field. Validation rules are defined
-//             // on the right side
-//             size: "required",
-//             sauce: "required",
-//         },
-//         // Specify validation error messages
-//         messages: {
-//             size: "Please select your pizza size",
-//             sauce: "Please select your pizza sauce"
-//         },
-//         submitHandler: function(form) {
-//             form.submit();
-//         }
-//     });
-
 var subTotal = 0;
 $('.card .button').on('click', function(event) {
   var button = event.target;
