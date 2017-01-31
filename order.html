@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/delivery.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Fine Dining | Delivery</title>
+</head>
+
+<body>
+    <header>
+        <nav class="white">
+            <div class="nav-wrapper container">
+                <div class="container">
+                    <a id="logo-container" href="#" class="logo">Galvanize Delivers</a>
+                    <ul class="right">
+                        <li class="active">
+                            <a class="order" href="order.html">Order</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- order -->
+    <div class="container">
+        <div class="row">
+            <!-- right col -->
+            <div class="col s6 push-s6">
+                <div class="row">
+                    <h5 style="color:#333">Order</h5>
+                    <table class="striped" id="order-details">
+                        <thead>
+                            <tr>
+                                <th data-field="item">Item</th>
+                                <th data-field="price">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Subtotal</td>
+                                <td id="subtotal">$0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Tax</td>
+                                <td id="tax">$0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td id="total">$0.00</td>
+                            </tr>
+                       </tfoot>
+                    </table>
+                    <!-- form -->
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="name" name="name" type="text" class="validate">
+                                    <label for="name">Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="telephone" name="telephone" type="tel" class="validate">
+                                    <label for="telephone">Phone Number</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">business</i>
+                                    <input id="address" name="address" type="text" class="validate">
+                                    <label for="address">Address</label>
+                                </div>
+                            </div>
+                        </form>
+                            <div class="row center">
+                              <a href="" id="order-btn" class="btn-large" style="background-color:#9F6C3C">Place Order</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- left col -->
+            <div class="col s6 pull-s6">
+                <h5 style="color:#333">Menu</h5>
+                <div class="row">
+                    <div class="col s6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/burger.jpg">
+                                <span class="card-title">Royale with Cheese</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$8.99</p>
+                            </div>
+                            <div class="card-action">
+                                <input type="submit" data-index="0" class="button" value="Add to Order" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/pizza.jpg">
+                                <span class="card-title">Arugula Pie</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$11.99</p>
+                            </div>
+                            <div class="card-action">
+                                <input type="submit" data-index="1" class="button" value="Add to Order" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/ribs.jpg">
+                                <span class="card-title">Smoked Swine</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$14.99</p>
+                            </div>
+                            <div class="card-action">
+                                <input type="submit" data-index="2" class="button" value="Add to Order" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/ice_cream.jpg">
+                                <span class="card-title">Ice-Cream Biscuit</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$7.99</p>
+                            </div>
+                            <div class="card-action">
+                                <input type="submit" data-index="3" class="button" value="Add to Order" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer" style="background-color: black">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m8">
+                <h5 class="white-text left-align">Galvanize Delivers</h5>
+                <h6 class="white-text left-align">Fine Dining, delivered</h6>
+              </div>
+              <div class="col s12 m4">
+                    <ul>
+                        <li>
+                            <a class="home" href="" style="color: white">Home</a>
+                        </li>
+                        <li>
+                            <a class="footer-order" href="order.html" style="color: white">order delivery</a>
+                        </li>
+                    </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright" style="background-color:#dedede">
+            <div id="copyright" class="container">
+                <h6 style="color:#333">2017 Galvanize Delivers</h6>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="js/delivery.js"></script>
+</body>
+
+</html>
